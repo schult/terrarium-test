@@ -1,0 +1,3 @@
+[submodule "lib/libDaisy"]
+	path = lib/libDaisy
+	url = https://github.com/schult/libDaisy.git
