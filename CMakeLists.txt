@@ -18,5 +18,4 @@ target_include_directories(${FIRMWARE_NAME} PRIVATE ${CMAKE_SOURCE_DIR})
 target_link_options(${FIRMWARE_NAME} PRIVATE
     -u _printf_float
     -flto=auto
-    LINKER:--no-warn-rwx-segments
 )
