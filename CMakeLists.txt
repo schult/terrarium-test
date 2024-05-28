@@ -19,3 +19,8 @@ target_link_options(${FIRMWARE_NAME} PRIVATE
     -u _printf_float
     -flto=auto
 )
+
+if(NOT PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
+    # Git auto-ignore out-of-source build directory
+    file(GENERATE OUTPUT .gitignore CONTENT "*")
+endif()
